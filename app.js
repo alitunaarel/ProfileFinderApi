@@ -5,7 +5,7 @@ const searchProfile = document.querySelector("#searchProfile");
 
 searchProfile.addEventListener("keyup", (e) => {
   ui.clear();
-  let text = e.target.value.toUpperCase();
+  let text = e.target.value;
 
   if (text !== "") {
     profile.getProfile(text)
